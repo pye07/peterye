@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+        <title>start blackbird</title>
+        <style>
+            h1 {
+                background-color:white;
+                opacity:.7;
+                color:gray;
+                text-align:center;
+                font-family:cinzel;
+            }
+
+            body {
+                background-color:black;
+                opacity:.7;
+                color:white;
+            }
+
+            .txt {
+                width: 50%;
+                font-family:cambay;
+            }
+
+            .hidden {
+                width: 50%;
+                font-family:cambay;
+                color:#2a2429;
+                cursor:default;
+                text-decoration:none;
+            }
+
+            .ooc {
+                text-align:center;
+            }
+
+            table,tr,td {
+                border: 1px solid white;
+                border-collapse:collapse;
+                padding:5px;
+                margin-left:auto;
+                margin-right:auto;
+                color:white
+                text-decoration:none
+                display:block;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>blackbird</h1>
+        <div class=txt>
+            you brought yourself here<br>why are you here<br><br>the blackbird sings to itself
+        </div>
+
+        <div class=ooc>here you can solve riddles<br>you are not trapped<br>there is an end<br>your end does not have to be my end<br>but I think you want your end to be my<br>end
+        </div>
+        <br>
+        <table>
+            <td><a id="your" href="" style="color:white">your end</a></td>
+            <td><a id="my" href="" style="color:white">my end</a></td>
+        </table>
+        <br>
+        <div style="color:white;text-align:center"><a style="color:white" id="no"></a></div>
+
+        <script type="text/javascript">
+            window.onload = function() {
+                var a = document.getElementById("your");
+                a.onclick = function() {
+                    var txt = "in this case, <em>your</em> end would be <em>my</em> choice"
+                    document.getElementById("no").innerHTML = txt
+                    return false
+                }
+                var b = document.getElementById("my");
+                b.onclick = function() {
+                    var txt2 = "but you never really had a choice"
+                    document.getElementById("no").innerHTML = txt2
+                    document.getElementById("no").href = "/room/zero.html"
+                    return false
+
+                }
+                }
+
+        </script>
+
+    </body>
+
+
+</html>

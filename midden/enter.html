@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+        <title>enter blackbird</title>
+        <style>
+            h1 {
+                background-color:white;
+                opacity:.7;
+                color:gray;
+                text-align:center;
+                font-family:cinzel;
+            }
+
+            body {
+                background-color:black;
+                opacity:.7;
+                color:white;
+            }
+
+            .txt {
+                width: 50%;
+                font-family:cambay;
+            }
+
+            .hidden {
+                width: 50%;
+                font-family:cambay;
+                color:#2a2429;
+                cursor:default;
+                text-decoration:none;
+            }
+
+            .ooc {
+                text-align:center;
+            }
+
+            table,tr,td {
+                border: 1px solid white;
+                border-collapse:collapse;
+                padding:5px;
+                margin-left:auto;
+                margin-right:auto;
+                color:white
+                text-decoration:none
+                display:block;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>blackbird</h1>
+        <div class=ooc>
+
+        </div>
+        <div class=txt>
+            there has to be more than this<br>
+        </div>
+        <a href="" class=hidden id="light">lights!</a>
+
+        <div class="ooc" id="rules"></div>
+
+            <script type="text/javascript">
+            window.onload = function() {
+                var a = document.getElementById("light")
+                a.onclick = function() {
+                    var txt = "welcome<br>to<br><br>BLACKBIRD<br><br><br>here are a couple of ground rules:<br><br>1. this is an escape room style puzzle game. your goal is to reach the end.<br><br>2. having a pencil and paper will help you.<br><br>3. most of the answers will be on this website, but sometimes sites like google and wikipedia will be your friend.<br><br>4. enter all passwords, answers, etc. as lowercase<br><br>5. do not inspect the source code. the most <q>page editing</q> you will do is occasionally changing the url.<br>for example, change <q>enter</q> to <q>start</q>."
+                    document.getElementById("rules").innerHTML = txt
+                    document.getElementById("light").className = "txt"
+                    document.getElementById("light").removeAttribute("href")
+                    return false
+                }
+            }
+        </script>
+    </body>
+
+
+</html>

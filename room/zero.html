@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+        <title>loading</title>
+        <style>
+            h1 {
+                background-color:white;
+                opacity:.7;
+                color:gray;
+                text-align:center;
+                font-family:cinzel;
+            }
+
+            body {
+                background-color:black;
+                opacity:.7;
+                color:white;
+            }
+
+            .txt {
+                width: 50%;
+                font-family:cambay;
+            }
+
+            .hidden {
+                width: 50%;
+                font-family:cambay;
+                color:#2a2429;
+                cursor:default;
+                text-decoration:none;
+            }
+
+            .ooc {
+                text-align:center;
+            }
+
+            .load {
+                margin-left:auto;
+                margin-right:auto;
+                text-align:center;
+                font-family:courier;
+                color:lemonchiffon;
+            }
+
+            table,tr,td {
+                border: 1px solid white;
+                border-collapse:collapse;
+                padding:5px;
+                margin-left:auto;
+                margin-right:auto;
+                color:white
+                text-decoration:none
+                display:block;
+            }
+        </style>
+
+    </head>
+
+    <body onload="setTimeout(loading,750)">
+
+        <h1>blackbird</h1>
+
+        <div class=load id="load">loading</div>
+
+        <script type="text/javascript">
+            function loading() {
+                document.getElementById("load").innerHTML="loading."
+                setTimeout(loading2,750)
+                function loading2() {
+                    document.getElementById("load").innerHTML="loading.."
+                    setTimeout(loading3,750)
+                    function loading3() {
+                        document.getElementById("load").innerHTML="loading..."
+                        setTimeout(loading4,750)
+                        function loading4() {
+                    document.getElementById("load").innerHTML="loading...<br>transporting"
+                    setTimeout(loading5,750)
+                    function loading5() {
+                        document.getElementById("load").innerHTML = "loading...<br>transporting."
+                        setTimeout(loading6,750)
+                        function loading6() {
+                            document.getElementById("load").innerHTML = "loading...<br>transporting.."
+                            setTimeout(loading7,750)
+                            function loading7() {
+                                document.getElementById("load").innerHTML = "loading...<br>transporting..."
+                                setTimeout(loading8,750)
+                                function loading8() {
+                                    document.getElementById("load").innerHTML = "loading...<br>transporting...<br>hello"
+                                    setTimeout(loading9,750)
+                                    function loading9() {
+                                        window.location.assign("/room/one.html")
+                                    }
+                                }
+                            }
+                        }
+                    }
+                        }
+                    }
+                }
+            }
+        </script>
+
+    </body>
+
+
+</html>

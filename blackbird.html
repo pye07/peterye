@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>blackbird</title>
+
+    <style></style>
+
+  </head>
+
+  <body>
+    <!-- <a href="https://imgur.com/6tUWE5d"><img src="https://i.imgur.com/6tUWE5d.gif" title="source: imgur.com" heigh="250" width="250" /></a> -->
+    <img id="blackbird" height="225" src="https://i.imgur.com/xFHDOnp.jpg" width="225" />
+
+    <pre>    <a target="_blank" href="https://www.youtube.com/watch?v=Man4Xw8Xypo" style="color: black; text-decoration: none;">blackbird</a> singing in the
+    dead of night
+    take these
+    broken wings
+    and learn to fly
+  </pre>
+
+  <p>
+    <label for = 'waiting' style="font-family:serif">what are you waiting for?</label><br>
+    <input type = 'search' id = 'waiting' name='waiting' onsearch='checkPassword();'  autocomplete='off'>
+  </p>
+
+  <a href="/midden/enter.html" id='love' style='font-family:serif; color:black;'></a>
+
+  <script>
+      function checkPassword(){
+          let password = document.getElementById('waiting');
+          let passwordText = password.value;
+          if (passwordText == "this moment to arise") {
+              txt()
+              return true
+          } else {
+              alert ('wrong answer! make sure you type all lowercase')
+              return false
+          }
+      }
+
+      function txt() {
+          var txt='enter';
+          document.getElementById('love').innerHTML=txt
+          document.getElementById('blackbird').src="https://i.imgur.com/4S1GEp1.jpg"
+      }
+
+
+  </script>
+
+  </body>
+
+
+
+</html>

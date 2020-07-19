@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+        <title>dark room</title>
+        <style>
+            h1 {
+                background-color:white;
+                opacity:.7;
+                color:gray;
+                text-align:center;
+                font-family:cinzel;
+            }
+
+            body {
+                background-color:black;
+                opacity:.7;
+                color:white;
+            }
+
+            .txt {
+                width: 50%;
+                font-family:cambay;
+            }
+
+            .hidden {
+                width: 50%;
+                font-family:cambay;
+                color:#2a2429;
+                cursor:default;
+                text-decoration:none;
+            }
+
+            .ooc {
+                text-align:center;
+            }
+
+            table,tr,td {
+                border: 1px solid white;
+                border-collapse:collapse;
+                padding:5px;
+                margin-left:auto;
+                margin-right:auto;
+                color:white
+                text-decoration:none
+                display:block;
+            }
+
+            .alph {
+                width:40%;
+                font-family:cambay;
+                color:tomato;
+            }
+
+            .balph {
+                width:40%;
+                font-family:cambay;
+                color:yellow;
+            }
+
+            .calph {
+                width:40%;
+                font-family:cambay;
+                color:lightskyblue;
+            }
+        </style>
+
+    </head>
+
+    <body onload="load()">
+        <h1>blackbird</h1>
+
+        <div class=txt>
+        you seem to be in a room<br>the room is very dark, and you can't see a thing<br>in the room you can hear what sounds like three people talking
+        </div>
+
+    <div id="alphabet" style="display:none">
+
+        <blockquote class=alph>
+            are we stuck in here?
+        </blockquote>
+
+        <blockquote class=balph>
+            beats me. I can't remember the password.
+        </blockquote>
+
+        <blockquote class=calph>
+            can we try some words?
+        </blockquote>
+
+        <blockquote class=alph>
+            do you think it could be numbers?
+        </blockquote>
+
+        <blockquote class=balph>
+            even if we did know, what would we do with it?
+        </blockquote>
+
+        <blockquote class=calph>
+            find our way out of here.
+        </blockquote>
+
+        <blockquote class=alph>
+            goodness gracious. is someone else in this room?
+        </blockquote>
+
+        <blockquote class=balph>
+            hello?
+        </blockquote>
+
+        <blockquote class=calph>
+            it doesn't seem like they want to talk to us.
+        </blockquote>
+
+        <label for="human" style="margin-left:40px"><em>what do you say?</em></label><br>
+        <input type="search" id="human" name="human" style="margin-left:40px" onsearch="checkReply()">
+
+    </div>
+
+    <div id="cool" style="display:none">
+
+        <blockquote class=alph>
+            knock it off! do you speak to your mother with that mouth?
+        </blockquote>
+
+        <blockquote class=balph>
+            learn some manners!
+        </blockquote>
+
+        <blockquote class=calph>
+            my god! where did you learn to speak like that?
+        </blockquote>
+
+        <blockquote class=alph>
+            no way they know anything about the passcode.
+        </blockquote>
+
+        <blockquote class=balph>
+            oh, I thought it was a password.
+        </blockquote>
+
+        <blockquote class=calph>
+            passcode, password--what's the difference?
+        </blockquote>
+
+        <blockquote class=alph>
+            quickly put, one is and number and the other is a word
+        </blockquote>
+
+        <blockquote class=balph>
+            really? I had no idea.
+        </blockquote>
+
+        <blockquote class=calph>
+            surely it was obvious, now that I think about it
+        </blockquote>
+
+        <blockquote class=alph>
+            thinking is the key to finding many answers
+        </blockquote>
+
+        <blockquote class=balph>
+            until we find the answer, we'll be stuck here forever!
+        </blockquote>
+
+        <blockquote class=calph>
+            very true.
+        </blockquote>
+
+        <blockquote class=alph>
+            what could it be? I remember it was quite long.
+        </blockquote>
+
+        <blockquote class=balph>
+            <em>xylophone</em> is a long word.
+        </blockquote>
+
+        <blockquote class=calph>
+            you can't just say random words!
+        </blockquote>
+
+        <blockquote class=alph>
+            zero. nothing. empty. I can't think of anything!
+        </blockquote>
+
+        <label for="password" style="margin-left:40px"><em>your answer?</em></label><br>
+    <input type="search" id="password" name="password" onsearch="checkPassword()" style="margin-left:40px" autocomplete="off">
+    </div>
+
+
+
+        <script type="text/javascript">
+
+        function load() {
+            window.setTimeout(loading,3000)
+            function loading() {
+            document.getElementById("alphabet").style.display = "block";
+
+            }
+        }
+
+            function checkReply() {
+                let reply = document.getElementById("human");
+                let replyText = reply.value;
+                if (replyText.startsWith("j")) {
+                    document.getElementById("cool").style.display = "block"
+                } else {
+                    alert("They didn't like what you said. Try again.");
+                }
+            }
+
+            function checkPassword() {
+                let password = document.getElementById("password")
+                let passwordText = password.value
+                if (passwordText == "alphabet") {
+                    window.location.assign("alph.html")
+                } else if (passwordText.startsWith("a")) {
+                    alert ("Close, but it's not that simple.")
+                } else {
+                    alert("That's not it! Try again.")
+                }
+            }
+
+        </script>
+
+    </body>
+
+
+</html>
