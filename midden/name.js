@@ -4,7 +4,7 @@ function checkPassword(){
     if (window.name == "" || null) {
         return false
     } else {
-        document.getElementById('love').innerHTML = "hi " + window.name + ", is that who you are?"
+        document.getElementById('love').innerHTML = "hi " + window.name + ", <br>is that who you are?"
         setTimeout(msg,2000)
         return false
     }
