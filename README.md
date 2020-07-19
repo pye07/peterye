@@ -1,3 +1,3 @@
-# pye07.github.io
+# BLACKBIRD
 this is an in progress escape room style puzzle game.<br>
-pye07.github.io/blackbird.html
+<a href="/blackbird.html">blackbird</a>
