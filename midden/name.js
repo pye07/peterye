@@ -17,3 +17,7 @@ function msg() {
         window.location.assign("/house/dining-room.html")
       }
 }
+
+function cory() {
+  document.getElementById("cory").innerHTML="oh hi "+window.name+", how's it hanging?"
+}
