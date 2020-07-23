@@ -44,19 +44,14 @@ function nine() {
   check()
 }
 
-function clear() {
-  window.location.reload(true)
-}
-
 
 function check() {
   if (document.getElementById("code").innerHTML === "1612") {
-    var coded = true
+    document.getElementById("success").innerHTML = "SUCCESS"
     setTimeout(function(){alert("it's the key!")},1);
     window.location.assign("/eddy/heart.html")
-  } else if (coded = true) {
-    window.location.assign("/eddy/heart.html")
-  } else {
-    return false
+  } else if (document.getElementById("code").innerHTML.length == 4) {
+    document.getElementById("error").innerHTML = "ERROR";
+    setTimeout(function(){window.location.reload(true)},500);
   }
 }

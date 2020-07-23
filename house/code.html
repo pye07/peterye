@@ -68,6 +68,28 @@
               letter-spacing: 150px;
               width: 800px;
             }
+
+            .error {
+              position: absolute;
+              text-align: center;
+              left: 17%;
+              top:25%;
+              font-size: 50px;
+              font-family: "Gochi Hand";
+              letter-spacing: 100px;
+              color:red;
+            }
+
+            .success {
+              position: absolute;
+              text-align: center;
+              left: 7%;
+              top:25%;
+              font-size: 50px;
+              font-family: "Gochi Hand";
+              letter-spacing: 82px;
+              color:green;
+            }
         </style>
 
     </head>
@@ -81,21 +103,22 @@
         <img src="https://i.imgur.com/j687SwK.jpg" alt="code" class="pic" usemap="#code">
 
         <map name="code">
-          <area shape="rect" coords="235,250,340,340" href="" onclick="one()" alt="1">
-          <area shape="rect" coords="340,250,430,340" href="" onclick="two()" alt="2">
-          <area shape="rect" coords="430,250,570,340" href="" onclick="three()" alt="3">
-          <area shape="rect" coords="235,340,340,430" href="" onclick="four()" alt="4">
-          <area shape="rect" coords="350,340,430,430" href="" onclick="five()" alt="5">
-          <area shape="rect" coords="440,340,570,430" href="" onclick="six()" alt="6">
-          <area shape="rect" coords="235,430,350,560" href="" onclick="seven()" alt="7">
-          <area shape="rect" coords="350,430,445,560" href="" onclick="eight()" alt="8">
-          <area shape="rect" coords="450,430,575,565" href="" onclick="nine()" alt="9">
-          <area shape="rect" coords="300,600,540,680" href="" onclick="location.reload()" alt="clear">
+          <area shape="rect" coords="235,250,340,340" href="#" onclick="one()" alt="1">
+          <area shape="rect" coords="340,250,430,335" href="#" onclick="two()" alt="2">
+          <area shape="rect" coords="430,250,570,340" href="#" onclick="three()" alt="3">
+          <area shape="rect" coords="235,340,340,430" href="#" onclick="four()" alt="4">
+          <area shape="rect" coords="350,340,430,430" href="#" onclick="five()" alt="5">
+          <area shape="rect" coords="440,340,570,430" href="#" onclick="six()" alt="6">
+          <area shape="rect" coords="235,430,350,560" href="#" onclick="seven()" alt="7">
+          <area shape="rect" coords="350,430,445,560" href="#" onclick="eight()" alt="8">
+          <area shape="rect" coords="450,430,575,565" href="#" onclick="nine()" alt="9">
+          <area shape="rect" coords="300,600,540,680" href="#" onclick="location.reload()" alt="clear">
         </map>
 
         <div class="code" id="code"></div>
-        <div><a class="txt" href="/house/living-room.html">back</a>
-        </div>
+        <div><a class="txt" href="/house/living-room.html">back</a></div>
+        <div class="error" id="error"></div>
+        <div class="success" id="success"></div>
 
 </div>
         <script src="code.js"></script>
