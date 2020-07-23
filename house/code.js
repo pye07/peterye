@@ -51,16 +51,12 @@ function clear() {
 
 function check() {
   if (document.getElementById("code").innerHTML === "1612") {
-    window.heartcode="yes";
+    var coded = true
     setTimeout(function(){alert("it's the key!")},1);
     window.location.assign("/eddy/heart.html")
-  }
-}
-
-function codecheck() {
-  if (window.heartcode="yes") {
+  } else if (coded = true) {
     window.location.assign("/eddy/heart.html")
   } else {
-    window.location.assign("/house/code.html")
+    return false
   }
 }
