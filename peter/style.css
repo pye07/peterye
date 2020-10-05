@@ -22,7 +22,7 @@ h1 {
   padding: 30px;
   text-align: center;
   margin: auto;
-  font-size: 40px;
+  font-size: 33px;
   border-radius: 35px;
   font-family: BenchNine;
 }
@@ -30,7 +30,7 @@ h1 {
 h2 {
   text-align: center;
   margin: auto;
-  font-size: 30px;
+  font-size: 25px;
   padding-top: 30px;
   font-family: 'Open Sans'
 }
@@ -43,7 +43,7 @@ h2 {
 
 .list {
   text-align: left;
-  font-size: 22px;
+  font-size: 15px;
   padding: 10px;
   font-family: 'Open Sans'
 }
