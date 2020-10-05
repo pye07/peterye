@@ -1,0 +1,85 @@
+@font-face {
+  font-family: opensans;
+  src:
+}
+
+p {
+  font-size: 25px;
+}
+
+body {
+  background-color: lightblue;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+  width: 10px;
+}
+/* Style the header */
+h1 {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  border-radius: 35px;
+  font-family: BenchNine;
+}
+
+h2 {
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  padding-top: 30px;
+  font-family: 'Open Sans'
+}
+
+.pp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  text-align: left;
+  font-size: 22px;
+  padding: 10px;
+  font-family: 'Open Sans'
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 50px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
