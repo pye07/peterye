@@ -8,41 +8,51 @@
     <title style="font-family:'BenchNine';">Lesson Plans</title>
   </head>
   <body>
-    <a href="/peter/home.html" style="h"><h1>Peter Ye</h1></a>
+    <a class="link" href="/peter/home.html" style="h"><h1>Peter Ye</h1></a>
+    <div class="topnav">
+      <a href="/peter/home.html">Home</a>
+      <a href="/peter/about.html">About Me</a>
+      <a href="/peter/resume.html">Resume</a>
+      <a href="/peter/philosophy.html">Philosophy</a>
+      <a href="/peter/readingreports.html">Reading Reports</a>
+      <a class="active" href="#">Lesson Plans</a>
+    </div>
     <h2> Lesson Plans </h2>
     <div class="head" style= "font-size:25px; font-family: 'Open Sans';">
       Select a lesson plan to view:
     </div>
     <div class="row">
-      <div class="column" id="lp1" title="Lesson Plan 1">Introduction to Pitch (Pt. 1)</div>
-      <div class="column" id="lp2" title="Lesson Plan 2">Introduction to Pitch (Pt. 2)</div>
-      <div class="column" id="lp3" title="Lesson Plan 3">Introduction to Rhythm</div>
+      <div class="column" id="lp1" title="Lesson Plan 1">Singing Activity</div>
+      <div class="column" id="lp2" title="Lesson Plan 2">Pitch Activity</div>
+      <div class="column" id="lp3" title="Lesson Plan 3">Rhythm Activity</div>
+      <div class="column" id="lp4" title="Lesson Plan 4">Movement Activity</div>
+      <div class="column" id="lp5" title="Lesson Plan 5">Creative Activity</div>
     </div>
 
-    <table>
+    <table class="lptable">
       <tr>
-        <th>Grade Level</th>
-        <td id="gl"></td>
+        <th class="lpth">Grade Level</th>
+        <td id="gl" class="lptd"></td>
       </tr>
       <tr>
-        <th>Learning<br>Objectives</th>
-        <td id="lo"></td>
+        <th class="lpth">Learning<br>Objectives</th>
+        <td id="lo" class="lptd"></td>
       </tr>
       <tr>
-        <th>Instructional<br>Resources<br>and<br>Materials</th>
-        <td id="irm"></td>
+        <th class="lpth">Instructional<br>Resources<br>and<br>Materials</th>
+        <td id="irm" class="lptd"></td>
       </tr>
       <tr>
-        <th>Instructional<br>Strategies</th>
-        <td id="is"></td>
+        <th class="lpth">Instructional<br>Strategies</th>
+        <td id="is" class="lptd"></td>
       </tr>
       <tr>
-        <th>Learning<br>Activities</th>
-        <td id="la"></td>
+        <th class="lpth">Learning<br>Activities</th>
+        <td id="la" class="lptd"></td>
       </tr>
       <tr>
-        <th>Informal<br>Assessment</th>
-        <td id="ia"></td>
+        <th class="lpth">Informal<br>Assessment</th>
+        <td id="ia" class="lptd"></td>
       </tr>
     </table>
   </body>
