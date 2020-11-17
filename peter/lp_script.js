@@ -16,7 +16,7 @@ window.onload = function() {
 
   b.onclick = function() {
     document.getElementById("gl").innerHTML = "Early Elementary"
-    document.getElementById("lo").innerHTML = "1.	Students accurately match pitch when singing<br>2.	Students can identify high and low notes."
+    document.getElementById("lo").innerHTML = "1.	Students accurately match pitch when singing<br>2.	Students can sing in time to a steady beat."
     document.getElementById("irm").innerHTML = "N/A"
     document.getElementById("is").innerHTML = "1.	Get everyone to stand up to reinforce PSP<br>2.	Teacher claps a steady beat (4/4 time). Teacher sings a note for four beats, and the class repeats the note for four beats. Informal assessment of accuracy in matching pitch.<br>3.	Talk about low notes and high notes. Use the same exercise as last time except sing “this is a low note” on low notes and “this is a high note” on high notes.<br>4.	Teach the song “We Are Going Higher” first by singing the song in full using Kodaly hand signs (just teacher). Then sing the song phrase by phrase, with the class repeating in between each phrase. Finally, sing the song with fun motions."
     document.getElementById("la").innerHTML = "1.	Students repeat and model the teacher often.<br>2.	Students use hand signs to reinforce high and low pitches, as well as tonal center.<br>3.	Students sing along to a beat to feel a sense of rhythm."
@@ -46,7 +46,7 @@ window.onload = function() {
 
   e.onclick = function() {
     document.getElementById("gl").innerHTML = "Early Elementary"
-    document.getElementById("lo").innerHTML = "1.	Improvise lyrics and movement to a steady beat"
+    document.getElementById("lo").innerHTML = "1.	Speak and move to a steady beat"
     document.getElementById("irm").innerHTML = "<a class='link' href='https://www.youtube.com/watch?v=rTsJfLAVRhA' targer='_blank'>Winter Backing Track</a>"
     document.getElementById("is").innerHTML = "1.	Ask the students to think about what activity they like to do in winter, and to come up with a rhythmic movement that corresponds with their activity<br>2.	Before the activity, put on a backing track and remind the class to talk with the beat. Start with a body percussion motion that goes with the beat, which the class maintains throughout. Ask in time “[Name], what do you like to do in winter?”"
     document.getElementById("la").innerHTML = "1.	Students improvise in turns with the teacher<br>2.	Students talk and move in time."
