@@ -145,13 +145,14 @@ h2 {
 .column {
   float: left;
   margin-left: 30px;
-  padding: 20px;
+  margin-bottom: 10px;
   font-family: "Open Sans";
   font-size: 20px;
   cursor: pointer;
   background-color: #edfbfc;
   border-radius: 50px;
   padding: 10px;
+  line-height: 150%;
 }
 
 /* Clear floats */
