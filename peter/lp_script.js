@@ -46,11 +46,11 @@ window.onload = function() {
 
   e.onclick = function() {
     document.getElementById("gl").innerHTML = "Early Elementary"
-    document.getElementById("lo").innerHTML = ""
-    document.getElementById("irm").innerHTML = ""
-    document.getElementById("is").innerHTML = ""
-    document.getElementById("la").innerHTML = ""
-    document.getElementById("ia").innerHTML = ""
+    document.getElementById("lo").innerHTML = "1.	Improvise lyrics and movement to a steady beat"
+    document.getElementById("irm").innerHTML = "<a class='link' href='https://www.youtube.com/watch?v=rTsJfLAVRhA' targer='_blank'>Winter Backing Track</a>"
+    document.getElementById("is").innerHTML = "1.	Ask the students to think about what activity they like to do in winter, and to come up with a rhythmic movement that corresponds with their activity<br>2.	Before the activity, put on a backing track and remind the class to talk with the beat. Start with a body percussion motion that goes with the beat, which the class maintains throughout. Ask in time “[Name], what do you like to do in winter?”"
+    document.getElementById("la").innerHTML = "1.	Students improvise in turns with the teacher<br>2.	Students talk and move in time."
+    document.getElementById("ia").innerHTML = "1.	Observe if students speak and move to the steady beat of the music provided by the backing track."
     return false
   }
 
