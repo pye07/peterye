@@ -4,6 +4,7 @@ window.onload = function() {
   var c = document.getElementById("lp3")
   var d = document.getElementById("lp4")
   var e = document.getElementById("lp5")
+  var f = document.getElementById("lp6")
   a.onclick = function() {
     document.getElementById("gl").innerHTML = "Early Elementary"
     document.getElementById("lo").innerHTML = "1.	Students accurately match pitch when singing<br>2.	Students learn about high and low notes."
@@ -54,4 +55,6 @@ window.onload = function() {
     return false
   }
 
+  f.onclick = function() {
+  }
 }
