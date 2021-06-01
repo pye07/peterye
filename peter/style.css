@@ -103,6 +103,12 @@ h2 {
   margin-right: auto;
 }
 
+.pp3 {
+  display: block;
+  margin-left: 40px;
+  margin-right: auto;
+}
+
 .list {
   text-align: left;
   font-size: 20px;
